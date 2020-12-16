@@ -1,0 +1,96 @@
+/* topbar */
+#topbar { width: 500px; margin: 0 auto; padding: 2px 0; text-align: center; color: var(--color-secondary); background-color: #333; border: 1px solid #444; }
+#topbar li { display: inline-block; margin: 0; padding: 0; color: var(--color-primary); }
+#topbar li:nth-child(1) { width: 40%; cursor: pointer; outline: none; }
+#topbar li:nth-child(2) { width: 10%; cursor: pointer; outline: none; }
+#topbar li:nth-child(3) { width: 40%; cursor: pointer; outline: none; }
+
+#wallet { width: 24px; height: 20px; background: url('/media/walletredx16.png') no-repeat center; border: none; outline: none; cursor: pointer; }
+#wallet:hover { background-image: url('/media/walletred16.png'); }
+
+content { display:block; text-align: center; margin-top: 40px; }
+
+#month { font-size: 200%; }
+#week  { width: 640px; margin: 0 auto 50px; }
+.day   { width: 86px; padding: 10px 0; font-size: 200%; color: var(--color-secondary); background-color: var(--back-primary); border: 1px solid var(--border-primary); outline:none; cursor: pointer; }
+.day-name { font-size: 40%; color: var(--color-secondary); }
+.day.sel { width: 96px; padding: 10px; font-size: 300%; color: var(--color-primary); background-color: var(--back-alternate); border-top: 4px solid #800; }
+.day:hover { color: var(--color-primary); }
+
+.list { width: 640px; margin: 50px auto; font-size: 120%; background-color: var(--back-primary); border: 1px solid var(--border-primary); border-collapse: collapse; }
+.list caption { padding: 4px 0; font-size: 150%; background-color: var(--back-alternate); }
+.list tr { border-bottom: 1px solid var(--border-primary); }
+.list img {  }
+.list td { vertical-align: middle; padding: 10px 0; }
+.list td:nth-child(1) { width: 250px; max-width: 250px; }
+.list td:nth-child(2) { width: 140px; max-width: 140px; }
+.list td:nth-child(3) { width: 250px; max-width: 250px; }
+
+.venue  { height: 24px; color: var(--color-secondary); text-align: right; font-size: 80%; line-height: 1em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.status { height: 24px; color: var(--color-primary);   text-align: center; font-size: 80%; }
+.date   { height: 24px; color: var(--color-secondary); text-align: left; font-size: 80%; }
+
+.closed    { color: #48C; }
+.live      { color: #48C; }
+.cancelled { color: #A00; }
+.postponed { color: #A00; }
+.final     { color: #FA0; }
+
+.team0 { text-align: right;  font-size: 150%; height: 50px; display: flex; justify-content: center; align-items: center; }
+.teamX { text-align: center; font-size: 150%; height: 50px; display: flex; justify-content: center; align-items: center; }
+.team1 { text-align: left;   font-size: 150%; height: 50px; display: flex; justify-content: center; align-items: center; }
+
+.team0-icon { display: inline-block; width: 64px; height: 64px; margin-left: 10px; cursor: pointer; }
+.team0-name { display: inline-block; width: 185px; cursor: pointer; }
+
+.team1-name { display: inline-block; width: 185px; cursor: pointer; }
+.team1-icon { display: inline-block; width: 64px; height: 64px; margin-right: 10px; cursor: pointer; }
+
+.odds0 { text-align: right;  height: 24px; }
+.oddsX { text-align: center; height: 24px; }
+.odds1 { text-align: left;   height: 24px; }
+.draw.hide  { visibility: hidden; }
+
+.logovs { width: 48px; height: 48px; cursor: pointer; }
+
+
+/* BETTING FORM */
+#modal { z-index: 3; display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.5); }
+#form { position: absolute; width: 400px; height: 440px; top: 50%; left: 50%; margin: -220px 0 0 -200px; text-align: center; background-color: var(--back-primary); border: 1px solid #444; border-radius: 10px 10px 0 0; }
+.form-title { margin: 4px; padding: 4px; text-align: center; font-weight: normal; background-color: #800; border: 1px solid #444; border-radius: 10px 10px 0 0; }
+
+#form-team { font-size: 2em; margin-bottom: 0; padding-bottom: 0; }
+.form-odds { margin-top: 10px; margin-bottom: 30px; font-weight: 300; }
+.form-bets { background-color: #666; padding: 5px; width: 300px; margin: 0 auto; border-radius: 8px 8px 0 0; }
+#odds      {  }
+#amount    { width: 300px; font-size: 2em; text-align: center; }
+#form-ubet { margin-bottom: 20px; font-weight: 300; }
+#form-send { width: 100px; margin: 10px; padding: 10px 0; border: 1px solid #48C; color: #48C; background-color: transparent; cursor: pointer; }
+#form-exit { width: 100px; margin: 10px; padding: 10px 0; border: 1px solid #C00; color: #C00; background-color: transparent; cursor: pointer; }
+#message   { margin-top: 20px; color: #FF6; }
+
+template { display: none; }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 720px) {
+    #topbar  { width:  90%; }
+	#week    { width: 100%; }
+	.day     { width:  12%; }
+	.day.sel { width:  20%; }
+	.list { width: 100%; }
+	.list td:nth-child(1) { width: 40%; max-width: 40%; }
+	.list td:nth-child(2) { width: 20%; max-width: 20%; }
+	.list td:nth-child(3) { width: 40%; max-width: 40%; }
+	.status { font-size: 80%; }
+	.team0  { font-size: 100%; }
+	.teamX  { font-size: 100%; }
+	.team1  { font-size: 100%; }
+	.team0-icon { display: none; }
+	.team1-icon { display: none; }
+	.team0-name { width: 100%; }
+	.team1-name { width: 100%; }
+}
+
+end {}

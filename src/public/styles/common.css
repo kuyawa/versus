@@ -1,0 +1,113 @@
+/* VERSUS */
+
+.light-mode {
+  --back-primary:     #FAFAFA;
+  --back-secondary:   #FDFDFD;
+  --back-alternate:   #F8F8F8;
+  --back-highlight:   #EAEAEA;
+  --back-selected:    #DDD;
+  --border-primary:   #E4E4E4;
+  --border-secondary: #DDD;
+  --border-alternate: #E4E4E4;
+  --button-border:    #00AA88;
+  --button-text:      #00AA88;
+  --button-hover:     #00AA88;
+  --button-htext:     #FFFFFF;
+  --color-primary:    #222;
+  --color-secondary:  #666;
+  --color-accented:   #0A8;
+  --color-input:      #222;
+  --color-dark:       #000;
+  --color-warn:       #C04;
+  --color-winner:     #D80;
+  --link-normal:      #69C;
+  --link-visited:     #69C;
+}
+.dark-mode {
+  --back-primary:     #202020;
+  --back-secondary:   #111111;
+  --back-alternate:   #282828;
+  --back-highlight:   #323232;
+  --back-selected:    #161616;
+  --border-primary:   #323232;
+  --border-secondary: #525252;
+  --border-alternate: #323232;
+  --button-primary:   #00AA88;
+  --button-awarded:   #FF6600;
+  --button-border:    #00AA88;
+  --button-text:      #00AA88;
+  --button-hover:     #00AA88;
+  --button-htext:     #FFFFFF;
+  --color-primary:    #FAFAFA;
+  --color-secondary:  #AAAAAA;
+  --color-accented:   #FFFFFF;
+  --color-input:      #FFFFFF;
+  --color-dark:       #111111;
+  --color-warn:       #CC0044;
+  --color-winner:     #D80;
+  --link-normal:      #6699CC;
+  --link-visited:     #6699CC;
+}
+
+
+html, body { margin: 0; padding: 0; font: normal 1.0em sans-serif; color: var(--color-primary); background-color: var(--back-secondary); }
+wrap { display: block; overflow: hidden; width: 1220px; margin: 0 auto; padding: 0 20px; /*border: 1px solid yellow;*/ }
+templates { display:none; }
+
+a { color: var(--font-primary); text-decoration: none; }
+a:visited { color: var(--font-primary); }
+li { list-style-type: none; }
+i.dec { color: var(--font-secondary); font-size: 90%; font-style: normal; }
+
+
+/* header */
+
+header { margin: 0; padding: 10px 0; background-color: var(--back-secondary); text-align: center; }
+header wrap {  }
+header #topmain  { margin: 20px 0 0; padding: 0; text-align: center; vertical-align: middle; }
+header #logo { width: 160px; height: 160px; }
+header #name { margin-top: 20px; }
+header h1 { margin: 0; padding: 0; text-align: center; font-size: 6em; font-weight: 600; color: var(--color-primary); }
+header h2 { margin: 0; padding: 0; font-size: 1.1em; font-weight: 300; color: var(--color-secondary); text-align: center; }
+header h3 { margin: 0; padding: 0; font-weight: normal; color: var(--color-secondary); }
+header a.index, header a.index:visited, header a.index:active { color: var(--color-primary); }
+
+/*
+input  { padding: 4px 4px; font-size: 1.2em; text-align: center; color: var(--font-primary); background-color: var(--back-alternate); border: 1px solid var(--border-primary); }
+input[disabled]  { color: var(--font-secondary); background-color: transparent; }
+*/
+
+
+/* footer */
+
+footer { margin: 0; padding: 50px 0 50px; background-color: var(--back-secondary); text-align: center; }
+footer h1, footer h2 { display: inline-block; margin: 0; padding: 0; }
+footer h1 { font-size: 1.2em; font-weight: 600; margin: 0 10px 0 0px; }
+footer h2 { font-size: 1.2em; font-weight: 300; color: var(--font-secondary); }
+#rights  { display: flex; align-items: center; justify-content: center; text-align: center; }
+#namebot { width: 150px; margin: 0; text-align: right; }
+#logobot { width:  32px; margin: 0 10px; }
+#copybot { width: 150px; margin: 0; text-align: left; }
+#links { margin: 30px 0; text-align: center; background-color: var(--back-secondary); color: var(--font-secondary); }
+/*#links a { display: inline-block; padding: 5px 10px; color: var(--link-normal); font-weight: 300; font-size: 90%; }*/
+#links a { color: var(--link-normal); }
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 720px) { /* iPhone 6S+ */
+    body  { width: 100%; font-size: 100%; }
+    wrap  { width: 100%; margin: 0; padding: 0; }
+    header { text-align: center; }
+    header h1 { font-size: 4em; }
+    header h1, header h2, header h3 { display: block; float: none; margin: 0; text-align: center; }
+    header h3 { font-size: 1em; }
+    header #logo { display: block; float: none; margin: 10px auto; }
+    header #name { width: 90%; }
+    section { width: 100%; }
+    footer { text-align: center; }
+    footer h1, footer h2 { display: block; margin: 2px; }
+    footer #rights { justify-content: center; }
+}

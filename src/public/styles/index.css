@@ -1,0 +1,30 @@
+/* topbar */
+#topbar { width: 500px; margin: 0 auto; padding: 2px 0; text-align: center; color: var(--color-secondary); background-color: #333; border: 1px solid #444; }
+#topbar li { display: inline-block; margin: 0; padding: 0; color: var(--color-primary); }
+#topbar li:nth-child(1) { width: 40%; cursor: pointer; outline: none; }
+#topbar li:nth-child(2) { width: 10%; cursor: pointer; outline: none; }
+#topbar li:nth-child(3) { width: 40%; cursor: pointer; outline: none; }
+
+#wallet { width: 24px; height: 20px; background: url('/media/walletredx16.png') no-repeat center; border: none; outline: none; cursor: pointer; }
+#wallet:hover { background-image: url('/media/walletred16.png'); }
+
+#main  { display:block; text-align: center; }
+.gobet { margin: 80px 0; padding: 10px 40px; font-size: 1.5em; color: #FCD600; background-color: transparent; border: 1px solid #FCD600; border-radius: 8px; cursor: pointer; }
+.gobet:hover { border: 1px solid #FCD600; color: #000; background-color: #FCD600; }
+
+#info { display: block; width: 1000px; margin: 150px auto 20px; overflow: hidden; clear: both; }
+#howto { float: right; width: 500px; margin-left: 50px;  }
+#wallex { float: left; width: 400px; height: 250px; }
+#wallex img { width: 400px; }
+#hero { width: 1000px; }
+
+
+@media screen and (max-width: 720px) {
+	#hero { width: 100%; }
+    #topbar { width: 95%; }
+	#info { width: 95%; height: 100%; margin: 50px auto; overflow: hidden; }
+    #wallex { display: block; float: none; width: 95%; height: 100%; margin: 0 auto; }
+    #wallex img { height: 250px; clear:both; overflow: hidden; }
+    #howto  { display: block; float: none; width: 95%; height: 100%; margin: 0 auto; text-align: center; }
+	#wallex img { width: 100%; margin: 0 auto; }
+}
