@@ -7,3 +7,7 @@
 # Betting on Binance!
 
 Visit us at https://versus.one 
+
+or
+
+Just run `node index` to try the app locally
