@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VERSUS</title>
-	<meta charset="utf-8">
-	<meta name="application-name" content="VERSUS">
-	<meta name="viewport" content="initial-scale=1">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="theme-color" content="#111111">
-	<link rel="stylesheet" type="text/css" href="/styles/common.css">
-	<link rel="stylesheet" type="text/css" href="/styles/events.css">
+    <title>VERSUS</title>
+    <meta charset="utf-8">
+    <meta name="application-name" content="VERSUS">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#111111">
+    <link rel="stylesheet" type="text/css" href="/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="/styles/events.css">
     <link rel="icon" href="/media/mobile-icon.png">
     <link rel="icon" sizes="192x192" href="/media/mobile-icon-192.png">
     <link rel="apple-touch-icon" href="/media/mobile-icon-apple.png"/>
@@ -18,102 +18,102 @@
 <body class="dark-mode">
 
 <header>
-	<wrap>
-		<div id="topmain">
-			<a class="index" href="/"><img id="logo" src="/media/logo.png"></a>
-			<div id="brand">
-				<li><a class="index" href="/"><img id="name" src="/media/name.png"></a></li>
-				<!-- <h1><a class="index" href="/">VERSUS</a></h1> -->
-				<!-- <h3>Smart Betting on Binance Smart Chain</h2> -->
-			</div>
-		</div>
-	</wrap>
-	<wrap>
-		<div id="topbar">
-			<li id="user-address" onclick="onWallet()">Connect Wallet</li> 
-			<li><button id="wallet" onclick="onWallet()"></button></li>
-			<li id="user-balance" onclick="onWallet()">0.0000 BNB</li>
-		</div>
-	</wrap>
+    <wrap>
+        <div id="topmain">
+            <a class="index" href="/"><img id="logo" src="/media/logo.png"></a>
+            <div id="brand">
+                <li><a class="index" href="/"><img id="name" src="/media/name.png"></a></li>
+                <!-- <h1><a class="index" href="/">VERSUS</a></h1> -->
+                <!-- <h3>Smart Betting on Binance Smart Chain</h2> -->
+            </div>
+        </div>
+    </wrap>
+    <wrap>
+        <div id="topbar">
+            <li id="user-address" onclick="onWallet()">Connect Wallet</li> 
+            <li><button id="wallet" onclick="onWallet()"></button></li>
+            <li id="user-balance" onclick="onWallet()">0.0000 BNB</li>
+        </div>
+    </wrap>
 </header>
 
 <content>
-	<div id="events">
+    <div id="events">
 
-		<div id="month">December</div>
-		<div id="week"> 
-			<button class="day" onclick="onDay(1)"><li class="day-name" id="dayx1">WED</li><li class="day-number" id="day1">1</li></button>
-			<button class="day" onclick="onDay(2)"><li class="day-name" id="dayx2">THU</li><li class="day-number" id="day2">2</li></button>
-			<button class="day" onclick="onDay(3)"><li class="day-name" id="dayx3">FRI</li><li class="day-number" id="day3">3</li></button>
-			<button class="day sel" onclick="onDay(4)"><li class="day-name" id="dayx4">SAT</li><li class="day-number" id="day4">4</li></button>
-			<button class="day" onclick="onDay(5)"><li class="day-name" id="dayx5">SUN</li><li class="day-number" id="day5">5</li></button>
-			<button class="day" onclick="onDay(6)"><li class="day-name" id="dayx6">MON</li><li class="day-number" id="day6">6</li></button>
-			<button class="day" onclick="onDay(7)"><li class="day-name" id="dayx7">TUE</li><li class="day-number" id="day7">7</li></button>
-		</div>
+        <div id="month">December</div>
+        <div id="week"> 
+            <button class="day" onclick="onDay(1)"><li class="day-name" id="dayx1">WED</li><li class="day-number" id="day1">1</li></button>
+            <button class="day" onclick="onDay(2)"><li class="day-name" id="dayx2">THU</li><li class="day-number" id="day2">2</li></button>
+            <button class="day" onclick="onDay(3)"><li class="day-name" id="dayx3">FRI</li><li class="day-number" id="day3">3</li></button>
+            <button class="day sel" onclick="onDay(4)"><li class="day-name" id="dayx4">SAT</li><li class="day-number" id="day4">4</li></button>
+            <button class="day" onclick="onDay(5)"><li class="day-name" id="dayx5">SUN</li><li class="day-number" id="day5">5</li></button>
+            <button class="day" onclick="onDay(6)"><li class="day-name" id="dayx6">MON</li><li class="day-number" id="day6">6</li></button>
+            <button class="day" onclick="onDay(7)"><li class="day-name" id="dayx7">TUE</li><li class="day-number" id="day7">7</li></button>
+        </div>
 
-		<div id="all-lists">
-			<table class="list" id="list-none">
-				<caption>Events</caption>
-				<tbody><tr><td>Loading events...</td></tr></tbody>
-			</table>
-		</div>
-	</div>
+        <div id="all-lists">
+            <table class="list" id="list-none">
+                <caption>Events</caption>
+                <tbody><tr><td>Loading events...</td></tr></tbody>
+            </table>
+        </div>
+    </div>
 </content>
 
 <footer>
-	<div id="rights"><span id="namebot">&copy; Versus.one</span> <img id="logobot" src="/media/logo.png"> <span id="copybot">All rights reserved</span></div>
+    <div id="rights"><span id="namebot">&copy; Versus.one</span> <img id="logobot" src="/media/logo.png"> <span id="copybot">All rights reserved</span></div>
 </footer>
 
 <div id="modal" onclick="hideForm()">
-	<div id="form" onclick="ignoreClick()">
-		<input type="hidden" id="address">
-		<input type="hidden" id="option">
-		<h1 class="form-title">Your Ticket</h1>
-		<h2 id="form-team">Lakers</h2>
-		<h3 class="form-odds">Odds <span id="odds">120</span></h3>
-		<h3 class="form-bets">Bet Amount</h3>
-		<input type="text" id="amount" value="100">
-		<h3 id="form-ubet">You bet 100 - You win 120</h3>
-		<button id="form-send" onclick="placeBet()">BET</button>
-		<button id="form-exit" onclick="hideForm()">Close</button>
-		<li id="message"></li>
-	</div>
+    <div id="form" onclick="ignoreClick()">
+        <input type="hidden" id="address">
+        <input type="hidden" id="option">
+        <h1 class="form-title">Your Ticket</h1>
+        <h2 id="form-team">Lakers</h2>
+        <h3 class="form-odds">Odds <span id="odds">120</span></h3>
+        <h3 class="form-bets">Bet Amount</h3>
+        <input type="text" id="amount" value="100">
+        <h3 id="form-ubet">You bet 100 - You win 120</h3>
+        <button id="form-send" onclick="placeBet()">BET</button>
+        <button id="form-exit" onclick="hideForm()">Close</button>
+        <li id="message"></li>
+    </div>
 </div>
 
 <!-- TEMPLATES -->
 <templates style="display:none">
-	<div id="ui-list-events">
-		<table class="list" id="list-{symbol}">
-			<caption>{name}</caption>
-			<thead></thead>
-			<tbody>{rows}</tbody>
-			<tfoot></tfoot>
-		</table>
-	</div>
-	<template id="ui-row-event">
-		<tr id="{address}">
-			<td onclick="onBet('{address}', 0)">
-				<div class="venue">{venue}</div>
-				<div class="team0"><img class="team0-icon" src="/teams/{league}/{sym0}.png"><span class="team0-name">{team0}</span></div>
-				<div class="odds0">{odds0}</div>
-			</td>
-			<td onclick="onBet('{address}', 1)">
-				<div class="status {status-class}">{status-text}</div>
-				<div class="teamX"><img class="logovs" src="/media/logovs.png"></div>
-				<div class="oddsX"><span class="draw {hide}">{draw}</span></div>
-			</td>
-			<td onclick="onBet('{address}', 2)">
-				<div class="date">{time}</div>
-				<div class="team1"><span class="team1-name">{team1}</span><img class="team1-icon" src="/teams/{league}/{sym1}.png"></div>
-				<div class="odds1">{odds1}</div>
-			</td>
-		</tr>
-	</template>
-	<template id="ui-row-noevents">
-		<tr>
-			<td>No events on this date</td>
-		</tr>
-	</template>
+    <div id="ui-list-events">
+        <table class="list" id="list-{symbol}">
+            <caption>{name}</caption>
+            <thead></thead>
+            <tbody>{rows}</tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <template id="ui-row-event">
+        <tr id="{address}">
+            <td onclick="onBet('{address}', 0)">
+                <div class="venue">{venue}</div>
+                <div class="team0"><img class="team0-icon" src="/teams/{league}/{sym0}.png"><span class="team0-name">{team0}</span></div>
+                <div class="odds0">{odds0}</div>
+            </td>
+            <td onclick="onBet('{address}', 1)">
+                <div class="status {status-class}">{status-text}</div>
+                <div class="teamX"><img class="logovs" src="/media/logovs.png"></div>
+                <div class="oddsX"><span class="draw {hide}">{draw}</span></div>
+            </td>
+            <td onclick="onBet('{address}', 2)">
+                <div class="date">{time}</div>
+                <div class="team1"><span class="team1-name">{team1}</span><img class="team1-icon" src="/teams/{league}/{sym1}.png"></div>
+                <div class="odds1">{odds1}</div>
+            </td>
+        </tr>
+    </template>
+    <template id="ui-row-noevents">
+        <tr>
+            <td>No events on this date</td>
+        </tr>
+    </template>
 </templates>
 
 <script src="/scripts/config.js"></script>
