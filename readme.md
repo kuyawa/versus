@@ -1,6 +1,6 @@
 # VERSUS
 
-## Predictions Market on Binance Smart Chain
+## Prediction Markets on Binance Smart Chain
 
 ![webshot](media/webshot.jpg)
 
